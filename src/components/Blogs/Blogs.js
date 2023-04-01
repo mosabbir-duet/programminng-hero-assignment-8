@@ -16,6 +16,7 @@ const Blogs = () => {
             .then(data => setBlogs(data))
     }, [])
 
+    
 
     const handleToBookmark = (blogInfo) => {
         let newBookmark = [];
@@ -35,7 +36,6 @@ const Blogs = () => {
         }
         newMarkRead = [...markRead, blogInfo]
         setMarkRead(newMarkRead);
-
         
     }
 

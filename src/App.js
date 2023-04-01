@@ -4,12 +4,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Blogs from './components/Blogs/Blogs';
 import Header from './components/Header/Header';
+import Question from './components/Question/Question';
 
 function App() {
   return (
     <div className="App container-xl px-0">
         <Header></Header>
         <Blogs></Blogs>
+        <Question></Question>
         <ToastContainer></ToastContainer>
     </div>
   );
