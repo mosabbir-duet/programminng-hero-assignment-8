@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './BlogContent.css';
 const BlogContent = ({blog, handleToBookmark, handleToMarkAsRead}) => {
-    const {authorImage, authorName, blogTitle, coverImage, readTime} = blog;
+    const {authorImage, authorName, blogTitle, coverImage, readTime, publishDate} = blog;
     const addToBookmark  = handleToBookmark;
     const addToMarkRead  = handleToMarkAsRead;
     return (
@@ -15,7 +15,7 @@ const BlogContent = ({blog, handleToBookmark, handleToMarkAsRead}) => {
                     <div className='author-info'>
 
                     <h4>{authorName}</h4>
-                    <p>Mar 14 (4 days ago)</p>
+                    <p>{publishDate} (4 days ago)</p>
                     </div>
                 </div>
                 <div style={{color: "rgba(17, 17, 17, 0.6)", fontSize: "20px", fontWeight:"500"}}>

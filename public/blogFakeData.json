@@ -5,6 +5,7 @@
     "authorName": "Hayden Frye",
     "authorImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/889.jpg",
     "readTime": 5,
+    "publishDate": "14 May",
     "blogTitle": "The Ultimate Guide to Learning Full Stack Web Development in 6 months, for $30",
     "tags": ["Node", "javaScript", "React"]
   },
@@ -14,6 +15,7 @@
     "authorName": "Knowles Richmond",
     "authorImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1030.jpg",
     "readTime": 4,
+    "publishDate": "4 June",
     "blogTitle": "Node.js Developer Roadmap 2023",
     "tags": ["Redis", "velit"]
   },
@@ -23,6 +25,7 @@
     "authorName": "Pratt Odonnell",
     "authorImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/604.jpg",
     "readTime": 7,
+    "publishDate": "1 Jan",
     "blogTitle": "9 Projects You Can Do to Become a Front-End Master in 2023",
     "tags": ["Ecommerce", "Node"]
   },
@@ -32,6 +35,7 @@
     "authorName": "Joy Lewis",
     "authorImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/118.jpg",
     "readTime": 3,
+    "publishDate": "19 Aug",
     "blogTitle": "You’re Using ChatGPT Wrong! Here’s How to Be Ahead of 99% of ChatGPT Users",
     "tags": ["AI", "Machine"]
   },
@@ -41,6 +45,7 @@
     "authorName": "Hyde Cardenas",
     "authorImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/741.jpg",
     "readTime": 8,
+    "publishDate": "31 Mar",
     "blogTitle": "Five Web & Mobile Development Articles worth your time this week",
     "tags": ["ReactNative", "React"]
   }
