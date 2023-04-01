@@ -1,0 +1,40 @@
+.content-container {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+  padding-bottom: 30px;
+}
+
+.content-container:last-child {
+  border: none;
+}
+
+.content-container > img {
+  border-radius: 8px;
+  height: 350px;
+  width: 100%;
+}
+
+.content-container h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 160%;
+  color: #111111;
+}
+
+.author-info {
+  margin-left: 24px;
+}
+.author-info h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  color: #111111;
+  margin-bottom: 0;
+}
+
+.author-info p {
+  margin-bottom: 0;
+  color: rgba(17, 17, 17, 0.6);
+}
