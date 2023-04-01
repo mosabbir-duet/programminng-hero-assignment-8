@@ -12,6 +12,14 @@ const Bookmark = ({bookmark}) => {
                 <h4>Spent time on read : {totalReadTime} min</h4>
             </div>
             
+            <div className='blog-title-container scrollbar'>
+                <h3>Bookmarked Blogs: {bookmark.length}</h3>
+                <div >
+                    {
+                        bookmark.map(blog => <p className='title-area'>{blog.blogTitle}</p>)
+                    }
+                </div>
+            </div>
             
         </div>
     );
