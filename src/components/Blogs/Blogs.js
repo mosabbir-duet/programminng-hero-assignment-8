@@ -1,32 +1,43 @@
 import React, { useEffect, useState } from 'react';
 import BlogContent from '../BlogContent/BlogContent';
+import Bookmark from '../Bookmark/Bookmark';
 import './Blogs.css';
 
 const Blogs = () => {
 
-    const [blogInfo, setBlogInfo] = useState([]);
+    const [blogs, setBlogs] = useState([]);
+    const [bookmark, setBookmark] = useState([]);
 
     useEffect( () => {
         fetch("blogFakeData.json")
             .then(res => res.json())
-            .then(data => setBlogInfo(data))
+            .then(data => setBlogs(data))
     }, [])
 
+
+    const handleToBookmark = (blogInfo) => {
+        let newBookmark = [];
+        newBookmark = [...bookmark, blogInfo]
+        setBookmark(newBookmark)
+        
+    }
+    console.log(bookmark)
     return (
         <div className='row pt-4'>
-            <div className='col-12 col-md-8 px-2'>
+            <div className='col-12 col-md-8 px-3'>
                 
-                {blogInfo.map( (info) => 
+                {blogs.map( (blog) => 
                     <BlogContent 
-                     key = {info.id}
-                     info = {info}
+                     key = {blog.id}
+                     blog = {blog}
+                     handleToBookmark = {handleToBookmark}
                     >
                     </BlogContent>
             )}
                 
             </div>
-            <div className=' col-12 col-md-4 px-2'>
-                <h1 className='bg-danger'>Bookmarked Area</h1>
+            <div className=' col-12 col-md-4 px-3'>
+                <Bookmark bookmark = {bookmark}></Bookmark>
                 
             </div>
         </div>

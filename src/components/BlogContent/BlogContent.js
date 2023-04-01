@@ -2,8 +2,9 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './BlogContent.css';
-const BlogContent = ({info}) => {
-    const {authorImage, authorName, blogTitle, coverImage, readTime} = info;
+const BlogContent = ({blog, handleToBookmark}) => {
+    const {authorImage, authorName, blogTitle, coverImage, readTime} = blog;
+    const addToBookmark  = handleToBookmark;
     return (
         <div className='content-container'>
             <img  src={coverImage} alt="" />
@@ -17,15 +18,15 @@ const BlogContent = ({info}) => {
                     </div>
                 </div>
                 <div style={{color: "rgba(17, 17, 17, 0.6)", fontSize: "20px", fontWeight:"500"}}>
-                    <p>{readTime} min read <a className='ms-2' href=""><FontAwesomeIcon icon={faBookmark} /></a></p>
+                    <p>{readTime} min read <button onClick={() => {addToBookmark(blog)}} className='ms-2 border-0' ><FontAwesomeIcon icon={faBookmark} /></button></p>
                 </div>
             </div>
             <h2>{blogTitle}</h2>
             {
-                info.tags.map( (tag) => <span style={{color: "rgba(17, 17, 17, 0.6)", fontSize: "20px", fontWeight:"500", marginRight: "15px"}}>#{tag}</span>)
+                blog.tags.map( (tag) => <span style={{color: "rgba(17, 17, 17, 0.6)", fontSize: "20px", fontWeight:"500", marginRight: "15px"}}>#{tag}</span>)
             }
             <br />
-            <a style={{fontSize: "20px", fontWeight:"500", display: "block", marginTop: "20px"}} href="">Mark as read</a>
+            <a style={{fontSize: "20px", fontWeight:"500", display: "block", marginTop: "20px"}} href="*">Mark as read</a>
         </div>
     );
 };
