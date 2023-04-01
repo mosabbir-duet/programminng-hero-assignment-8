@@ -1,9 +1,9 @@
 import React from 'react';
 import './Bookmark.css';
-const Bookmark = ({bookmark}) => {
+const Bookmark = ({bookmark, markRead}) => {
     console.log(bookmark);
     let totalReadTime = 0;
-    for(const blogInfo of bookmark){
+    for(const blogInfo of markRead){
         totalReadTime += blogInfo.readTime;
     }
     return (
